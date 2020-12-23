@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link href="cart.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="countainer">
+
+      <img src="cart.jpg" height="200px" width="200px" class="cartpic">
+      <div class="circle-cart"> <input type="text" class="size"
+        size="1" value="0" id="count"></div>
+    <input class="btn" value="+" onclick="plus()" type="button">
+    <input class="btn" value="-" onclick="minus()" type="button">
+   </div>
+    <script>
+      var count = 0;
+var countEl = document.getElementById("count");
+function plus(){
+    count++;
+    countEl.value = count;
+}
+function minus(){
+  if (count > 0) {
+    count--;
+    countEl.value = count;
+  }  
+}
+    
+  </script>
+  </body>
+</html>
